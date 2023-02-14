@@ -1,0 +1,69 @@
+<!-- Written by: Kara Balsom
+Date Written: July 18, 2022
+File Name: Kara_QAP3.zip -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./todo.css" />
+
+    </head>
+  <body>
+    <div class="container">
+      <h1>To Do List... </h1>
+      <p id="notification"></p>
+      <form id="todo-form">
+        <div class="input">
+          <label for="Task">Task: </label>
+          <input type="text" id="task" class="u-full-width" />
+        </div>
+        <div class="input">
+          <label for="Date">Date Due: </label>
+          <input type="date" id="date" class="u-full-width" />
+        </div>
+      
+        <div class="category">
+          <label for="Category">Category: </label>
+          <select id="category">
+            <option value="Choose">Select</option>
+            <option value="ACTIVITY">Activity</option>
+            <option value="APPOINTMENT">Appointment</option>
+            <option value="ERRAND">Errand</option>
+            <option value="HOUSEHOLD CHORE">Household Chore</option>
+            <option value="REPAIR">Repair</option>
+            <option value="SHOPPING">Shopping</option>
+            <option value="SOCIAL">Social</option>
+            <option value="OTHER">Other</option>
+          </select>
+        </div>
+        
+        <div class="priority">
+          <label for="Priority">Priority: </label>
+          <select id="priority">
+            <option value="Choose">Select</option>
+            <option value="LOW">Low</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="IMPORTANT">Important</option>
+            <option value="URGENT">Urgent</option>
+          </select>
+        </div>
+        
+        </div>
+        <div id="submit-button">
+          <button id="submit">Submit</button>
+        </div>
+
+        <div id="tbody">
+          
+        </div>
+        <div id="adddiv"></div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
+
+   
